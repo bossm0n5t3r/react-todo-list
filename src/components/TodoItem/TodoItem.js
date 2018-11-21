@@ -19,7 +19,8 @@ class TodoItem extends Component {
                 <div className={cx('delete')} onClick={(e) => {
                     onRemove();
                     e.stopPropagation();
-                }}>[지우기]</div>
+                }
+                }>[지우기]</div>
             </div>
         );
     }

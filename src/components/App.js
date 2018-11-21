@@ -63,8 +63,10 @@ class App extends Component {
         const index = todos.findIndex(todo => todo.id === id);
 
         this.setState({
-            ...todos.slice(0, index),
-            ...todos.slice(index + 1, todos.length)
+            todos: [
+                ...todos.slice(0, index),
+                ...todos.slice(index + 1, todos.length)
+            ]
         });
     }
 
